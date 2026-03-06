@@ -6,12 +6,12 @@
   },
   "main_firmware": {
     "version": "1.1.0",
-    "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/v1.1.0/",
+    "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/v1.1.0/esp32_smart_car.bin",
     "changelog": "优化了电机控制算法"
   }
   "cam_firmware": {
     "version": "1.0.5",
-    "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/v1.1.0/",
+    "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/v1.1.0/esp32_camera.bin",
     "changelog": "优化图像传输帧率"
   }
 }

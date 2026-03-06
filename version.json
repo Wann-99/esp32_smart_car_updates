@@ -1,17 +1,17 @@
 {
   "app": {
     "version": "1.1.1",
-    "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/v1.1.1/app-release.apk",
+    "url": "https://fastly.jsdelivr.net/gh/Wann-99/esp32_smart_car_updates@main/app-release.apk",
     "changelog": "第一次正式版本，升级app"
   },
   "main_firmware": {
     "version": "1.1.0",
-    "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/v1.1.0/esp32_smart_car.bin",
+    "url": "https://fastly.jsdelivr.net/gh/Wann-99/esp32_smart_car_updates@main/esp32_smart_car.bin",
     "changelog": "第一次正式版本，控制完成"
   }
   "cam_firmware": {
     "version": "1.1.0",
-    "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/v1.1.0/esp32_camera.bin",
+    "url": "https://fastly.jsdelivr.net/gh/Wann-99/esp32_smart_car_updates@main/esp32_camera.bin",
     "changelog": "第一次正式版本，实现camera"
   }
 }

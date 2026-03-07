@@ -2,24 +2,8 @@
   "app": {
     "version": "1.1.0",
     "url": "https://fastly.jsdelivr.net/gh/Wann-99/esp32_smart_car_updates@main/app-release.apk",
-    "changelog": "正式版本",
+    "changelog": "1.正式发版\n2. 优化了登录交互\n3. 修复了已知问题",
     "sha256": "DC7CEE7A02994B0AF3AD73D1AC7A51238B5814478C0E10F090846C2F8CC8C036",
-    "min_version": "1.0.0"
-  },
-  "firmware": {
-    "main": {
-      "version": "1.1.2",
-      "url": "https://example.com/main_v1.1.2.bin",
-      "changelog": "优化了电机控制算法",
-      "sha256": "b2c1...a34",
-      "min_version": "1.1.0"
-    },
-    "camera": {
-      "version": "1.0.8",
-      "url": "https://example.com/cam_v1.0.8.bin",
-      "changelog": "修复了低光照下的噪点问题",
-      "sha256": "d4e5...c67",
-      "min_version": "1.0.5"
-    }
+    "min_version": "1.0.1"
   }
 }

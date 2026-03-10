@@ -2,7 +2,7 @@
   "app": {
     "version": "v2.0.0",
     "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/latest/download/app-release.apk",
-    "sha256": "1d975cb2e848b79403027bca60c63d2abe4545b2c6561425e8fc350f7f1acac8",
+    "sha256": "a0abd2cbd85e323e7381da7215d998e49dd9e1a8fe1969649254d54c7f21ed33",
     "changelog": "1、增加电池电量管理/n2、完整的app功能",
     "min_version": "1.1.2"
   }

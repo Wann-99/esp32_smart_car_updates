@@ -1,10 +1,21 @@
 {
   "app": {
-    "version": "2.0.0",
-    "build_number": 8,
+    "min_version": "1.0.0",
+    "changelog": "常规性能优化与稳定性提升",
+    "sha256": "7fea0b499807bb007343d54306d15c1578a1b584f4754bb58642c43ca159d2f4",
     "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/latest/download/app-release.apk",
-    "changelog": "常规更新与性能优化",
-    "sha256": "5eacc4af5adf097aead195fd931530d314e731b1e5402af7eca6ee7ac6e18981",
-    "min_version": "1.0.0"
+    "version": "2.0.0",
+    "build_number": 9
+  },
+  "firmware": {
+    "main": {},
+    "camera": {
+      "min_version": "1.0.0",
+      "changelog": "常规性能优化与稳定性提升",
+      "sha256": "bb621d3a520b26b0aec704d1fd9478a1ff38fb4fdb2476a878c5ecf9ff1810de",
+      "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/latest/download/cam_firmware.bin",
+      "version": "1.0.0",
+      "build_number": 1
+    }
   }
 }

@@ -5,7 +5,7 @@
     "sha256": "11d3d81cd2036c88be8f11a7a5f8cdb85338f9490ca8ee8312ff560694f5aa93",
     "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/latest/download/app-release.apk",
     "version": "2.0.1",
-    "build_number": 3
+    "build_number": 2
   },
   "firmware": {
     "main": {},

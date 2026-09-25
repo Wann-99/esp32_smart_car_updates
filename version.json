@@ -7,7 +7,13 @@
     "changelog": "以当前手动控制版本作为新的发布基线；统一软件版本、安装包与更新清单，后续按版本递增升级。"
   },
   "firmware": {
-    "main": {},
+    "main": {
+      "version": "1.3.0",
+      "build_number": 1,
+      "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/firmware-v1.3.0/main_firmware.bin",
+      "sha256": "fe76fe805ca6e0c562dbf7cb2c24492c881e6bba4667d94661dc8c5ac4994fae",
+      "changelog": "新增 WS2812/WS2812B 状态灯带：开机、联网、配网热点、固件升级和升级失败状态显示。"
+    },
     "camera": {
       "min_version": "1.0.0",
       "changelog": "常规性能优化与稳定性提升",

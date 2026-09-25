@@ -15,7 +15,7 @@
       "changelog": "修复 OTA 响应未完成就重启导致 connection reset by peer；保留状态灯带功能。"
     },
     "camera": {
-      "changelog": "常规性能优化与稳定性提升",
+      "changelog": "修复摄像头 OTA 响应未完成就重启导致 connection reset by peer。",
       "sha256": "a3d2cc221e7d3e5546e4ae67d1b25d97edfcb2b436266796dc3f963b9f7929cf",
       "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/firmware-v1.0.1/cam_firmware.bin",
       "version": "1.0.1",

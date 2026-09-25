@@ -1,25 +1,24 @@
 {
   "app": {
-    "version": "3.0.0",
-    "build_number": 10,
-    "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/v3.0.0/app-release.apk",
-    "sha256": "408b95dd4bd0bacdd9344bdfe640c9482ec74efc1bea921082ca8a7aee02155b",
-    "changelog": "以当前手动控制版本作为新的发布基线；统一软件版本、安装包与更新清单，后续按版本递增升级。"
+    "version": "3.0.1",
+    "build_number": 11,
+    "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/v3.0.1/app-release.apk",
+    "sha256": "e98bdf8fc8bec4121728bae5c6912ff9a6420dacb67452921219fee97d6cd8a5",
+    "changelog": "修复 OTA connection reset by peer；升级后自动确认主控或摄像头固件版本。"
   },
   "firmware": {
     "main": {
-      "version": "1.3.0",
+      "version": "1.3.1",
       "build_number": 1,
-      "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/firmware-v1.3.0/main_firmware.bin",
-      "sha256": "fe76fe805ca6e0c562dbf7cb2c24492c881e6bba4667d94661dc8c5ac4994fae",
-      "changelog": "新增 WS2812/WS2812B 状态灯带：开机、联网、配网热点、固件升级和升级失败状态显示。"
+      "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/firmware-v1.3.1/main_firmware.bin",
+      "sha256": "0477bbe3f3afd370fcfc107ff52426881ce615e43f9c69ee9edbe39178a74879",
+      "changelog": "修复 OTA 响应未完成就重启导致 connection reset by peer；保留状态灯带功能。"
     },
     "camera": {
-      "min_version": "1.0.0",
       "changelog": "常规性能优化与稳定性提升",
-      "sha256": "bb621d3a520b26b0aec704d1fd9478a1ff38fb4fdb2476a878c5ecf9ff1810de",
-      "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/latest/download/cam_firmware.bin",
-      "version": "1.0.0",
+      "sha256": "a3d2cc221e7d3e5546e4ae67d1b25d97edfcb2b436266796dc3f963b9f7929cf",
+      "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/firmware-v1.0.1/cam_firmware.bin",
+      "version": "1.0.1",
       "build_number": 1
     }
   }

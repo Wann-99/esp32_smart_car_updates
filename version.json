@@ -1,10 +1,10 @@
 {
   "app": {
-    "version": "3.1.3",
-    "build_number": 15,
-    "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/v3.1.3/app-release.apk",
-    "sha256": "d1a970f8e7391214f8dd728dc936f29aabb44eb4846b1000a3d2453b9c972460",
-    "changelog": "控制页直接显示驾驶操作；离开页面、退到后台、松手或取消触摸立即发送停车并停止重发；连接DF200后显示共用的主控IP；进入控制页不再自动移动云台，保留手动103°居中。配套统一主控2.0.5。"
+    "version": "3.1.4",
+    "build_number": 16,
+    "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/v3.1.4/app-release.apk",
+    "sha256": "b3c8eb44492a07aa03e1120e3525b2f5f9826fce09b379582a1478edff610f64",
+    "changelog": "修复OTA错误提示：2.0.4/2.0.5接收端栈不足时明确提示先USB烧录2.0.6或更高版本；上传失败保留阶段和进度；最终响应断开后只在确认不同的新版本时判成功，重启未更新不再误判。"
   },
   "firmware": {
     "main": {

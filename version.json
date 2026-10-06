@@ -8,12 +8,12 @@
   },
   "firmware": {
     "main": {
-      "version": "2.0.5",
-      "build_number": 6,
+      "version": "2.0.6",
+      "build_number": 7,
       "hardware": "esp32s3_df200",
-      "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/firmware-v2.0.5/main_firmware.bin",
-      "sha256": "6d6ca056d5039e12d1b834788b5a3bf402869b4e7ae87696782a37727f5e175a",
-      "changelog": "四轮增加按运动比例的速度差补偿，最慢轮饱和时共同限速；松手后统一短接制动250ms再释放；PCA9685初始化关闭输出，取消开机扫动和自动归中。沿用2.0.3/2.0.4全部GPIO；2.0.2及更早版本须先按接线文档迁移后轮编码器到GPIO2/38/47/48并移除这些引脚原器件。本固件仅用于单ESP32-S3 N16R8+DF200。请架空低速验证轮速和制动，L298每桥制动电流须低于2A。"
+      "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/firmware-v2.0.6/main_firmware.bin",
+      "sha256": "d0b537b3930a37c0cad400f364318d377980bca6dbdaf032522282dadac03375",
+      "changelog": "修复OTA上传触发重启：接收函数栈帧4208字节超过原HTTP任务4096字节栈，现将任务栈增至8192字节。2.0.4/2.0.5必须先通过USB完整烧录2.0.6一次，旧OTA接收端不能接收自己的修复包。保留2.0.5的GPIO、轮速、制动与舵机行为；仅用于单ESP32-S3 N16R8+DF200。更早版本迁移仍须核对后轮编码器GPIO2/38/47/48接线。静态栈检查和App断线回归已通过，实机OTA仍待烧录后验证。"
     }
   }
 }

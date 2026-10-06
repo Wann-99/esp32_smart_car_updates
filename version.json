@@ -8,12 +8,12 @@
   },
   "firmware": {
     "main": {
-      "version": "2.0.7",
-      "build_number": 8,
+      "version": "2.0.8",
+      "build_number": 9,
       "hardware": "esp32s3_df200",
-      "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/firmware-v2.0.7/main_firmware.bin",
-      "sha256": "d8b39c9b98c27a3bfc4c382c4705b2b3bc4f6646cd4487f1829f7648e43e0567",
-      "changelog": "先升级App至3.1.6。摄像头根据USB实际枚举模式优先尝试1920x1080 MJPEG（优先设备支持的5fps或更低档），失败后尝试720P、VGA MJPEG和160x120 YUY2，App显示实际模式，不保证DF200在S3的Full-Speed USB链路上提供1080P。新增GPIO46控制两线5V、7灯珠状态灯带，必须通过3.3V逻辑电平N沟道MOSFET并加10k栅极下拉，不能直接给灯带供电；保留全部电机、编码器和舵机接线。2.0.6可无线升级；2.0.4/2.0.5仍需先USB修复。正常和诊断固件构建、软件视频及GPIO/OTA回归通过，实物1080P、灯带和OTA待验证。"
+      "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/firmware-v2.0.8/main_firmware.bin",
+      "sha256": "253e8000245cf44083e28607db49d2fc278a579d1487a1ef5fd155f0ae1587ba",
+      "changelog": "配合App 3.1.7，将原喇叭GPIO3改为手动灯光：点击开关，开机默认关闭，控制连接断开时关闭，移除旧horn指令。先断电断开原喇叭模块；两线5V灯带必须通过兼容3.3V输入的MOSFET驱动，保留10k栅极下拉，不可直接接GPIO。GPIO46自动联网/升级状态灯保持独立，同一驱动输入不能并接两个GPIO。电机、编码器、云台和DF200接线不变；保留摄像头高清模式尝试及降级、OTA修复。2.0.6及以后可无线升级，2.0.4/2.0.5需先USB修复。软件检查与构建通过，实物灯光和OTA待验证。"
     }
   }
 }

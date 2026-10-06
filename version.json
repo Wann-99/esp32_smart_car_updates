@@ -1,10 +1,10 @@
 {
   "app": {
-    "version": "3.1.7",
-    "build_number": 19,
-    "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/v3.1.7/app-release.apk",
-    "sha256": "950560992e83730f41621281eeb798a29e25a90b9a2a536a16099a7e7c2bf69d",
-    "changelog": "喇叭按钮改为灯光开关：点击开灯，再次点击关灯，取消半秒自动关闭；停止、退出控制页或进入后台时关灯。需配合主控2.0.8，GPIO3通过MOSFET控制手动灯光；GPIO46自动状态灯独立。保留DF200视频和OTA升级功能。"
+    "version": "3.1.8",
+    "build_number": 20,
+    "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/v3.1.8/app-release.apk",
+    "sha256": "b4e49c5b23412785254693471cc29895be9aa27a521fb484489f9ccf39493231",
+    "changelog": "改善视频稳定性：接收与解码分离，只保留最新待解码帧，跳过坏JPEG；断流保留画面并显示暂停重连状态，恢复后继续播放。控制页及设备信息新增四轮实测/目标计数，显示具体车轮无反馈或方向异常；优化横屏布局。配合主控2.0.9修复轮速/行程同步及控制连接，现有接线、灯光、舵机和OTA功能保留。"
   },
   "firmware": {
     "main": {

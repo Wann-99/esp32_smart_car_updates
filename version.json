@@ -8,12 +8,12 @@
   },
   "firmware": {
     "main": {
-      "version": "2.0.6",
-      "build_number": 7,
+      "version": "2.0.7",
+      "build_number": 8,
       "hardware": "esp32s3_df200",
-      "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/firmware-v2.0.6/main_firmware.bin",
-      "sha256": "d0b537b3930a37c0cad400f364318d377980bca6dbdaf032522282dadac03375",
-      "changelog": "修复OTA上传触发重启：接收函数栈帧4208字节超过原HTTP任务4096字节栈，现将任务栈增至8192字节。2.0.4/2.0.5必须先通过USB完整烧录2.0.6一次，旧OTA接收端不能接收自己的修复包。保留2.0.5的GPIO、轮速、制动与舵机行为；仅用于单ESP32-S3 N16R8+DF200。更早版本迁移仍须核对后轮编码器GPIO2/38/47/48接线。静态栈检查和App断线回归已通过，实机OTA仍待烧录后验证。"
+      "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/firmware-v2.0.7/main_firmware.bin",
+      "sha256": "d8b39c9b98c27a3bfc4c382c4705b2b3bc4f6646cd4487f1829f7648e43e0567",
+      "changelog": "先升级App至3.1.6。摄像头根据USB实际枚举模式优先尝试1920x1080 MJPEG（优先设备支持的5fps或更低档），失败后尝试720P、VGA MJPEG和160x120 YUY2，App显示实际模式，不保证DF200在S3的Full-Speed USB链路上提供1080P。新增GPIO46控制两线5V、7灯珠状态灯带，必须通过3.3V逻辑电平N沟道MOSFET并加10k栅极下拉，不能直接给灯带供电；保留全部电机、编码器和舵机接线。2.0.6可无线升级；2.0.4/2.0.5仍需先USB修复。正常和诊断固件构建、软件视频及GPIO/OTA回归通过，实物1080P、灯带和OTA待验证。"
     }
   }
 }

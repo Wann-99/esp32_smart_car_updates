@@ -1,10 +1,10 @@
 {
   "app": {
-    "version": "3.1.5",
-    "build_number": 17,
-    "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/v3.1.5/app-release.apk",
-    "sha256": "6e80ae64acb71923fbe4557058796d92f1099dbdcb423f7ec48ba28554cedbd7",
-    "changelog": "修复固件升级状态残留：收到设备实际版本后立即刷新更新标记；版本变化后清除旧固件升级结果，相同版本的真实失败仍保留；App下载与固件升级的状态和进度分开，切换设备不再串用提示；未知固件版本不再误报有新版本。主控固件保持2.0.6，无需重新烧录。"
+    "version": "3.1.6",
+    "build_number": 18,
+    "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/v3.1.6/app-release.apk",
+    "sha256": "5f0eb1cbe9e9331db1fc19bad54cdffd005d7f10d1875a2ec5ac199300381fda",
+    "changelog": "支持DF200的1080P MJPEG视频解码，同时兼容旧YUY2视频；摄像头信息显示实际分辨率、帧率和格式，配合主控2.0.7尝试高清模式，不再固定显示160x120。保留3.1.5的OTA状态修复。请先安装本App，再升级主控固件。"
   },
   "firmware": {
     "main": {

@@ -8,12 +8,12 @@
   },
   "firmware": {
     "main": {
-      "version": "2.0.9",
-      "build_number": 10,
+      "version": "2.0.10",
+      "build_number": 11,
       "hardware": "esp32s3_df200",
-      "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/firmware-v2.0.9/main_firmware.bin",
-      "sha256": "cd0274751523e818a5bec44a715b27fdfb816f0d84447d575c8c28390856138c",
-      "changelog": "配合App 3.1.8。四轮速度PI外增加累计行程同步，补偿起步和途中负载差异；保持混合运动比例与共同限速。编码器连续1秒无反馈或0.4秒方向异常时停止四轮，松开/停止后才能重试；新增实际反馈、有效目标和故障轮位数据，重点检查左后M3。修复状态推送与控制回复跨任务写同一WebSocket的风险，推送改为串行且不积压；连接名额由实际10增至16，HTTP探测不踢掉控制连接，完整返回轮速状态。所有GPIO不变，保留GPIO3手动灯光、GPIO46状态灯、DF200高清尝试和OTA修复。软件仿真与三种固件构建通过，装车轮速、弱网视频、供电和OTA仍需实测；2.0.4/2.0.5须先USB修复。"
+      "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/firmware-v2.0.10/main_firmware.bin",
+      "sha256": "8cfb9e6a05aef297661ca383801a7c1bfb66b66d96932e9cf952c453fcf8dbf4",
+      "changelog": "配合现有App 3.1.8，无需更新App。根据实物确认的左后轮向前转却反馈反向问题，将M3编码器反馈符号从+1修正为-1，同时修正速度与累计行程计数，避免错误反馈导致加速及方向异常停车。现有GPIO及A/B接线不变，不要同时互换编码器线；其余轮位、控制参数和无反馈/反向停车保护保持不变。保留2.0.9轮速同步、控制连接和视频修复。独立传感器方向模拟、GPIO检查及三种固件构建通过；升级后先架空以20%速度验证前进、后退，实测与目标应同号，实车仍需验证。2.0.4/2.0.5须先USB修复。"
     }
   }
 }

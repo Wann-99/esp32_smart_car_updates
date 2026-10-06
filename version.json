@@ -1,10 +1,10 @@
 {
   "app": {
-    "version": "3.1.4",
-    "build_number": 16,
-    "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/v3.1.4/app-release.apk",
-    "sha256": "b3c8eb44492a07aa03e1120e3525b2f5f9826fce09b379582a1478edff610f64",
-    "changelog": "修复OTA错误提示：2.0.4/2.0.5接收端栈不足时明确提示先USB烧录2.0.6或更高版本；上传失败保留阶段和进度；最终响应断开后只在确认不同的新版本时判成功，重启未更新不再误判。"
+    "version": "3.1.5",
+    "build_number": 17,
+    "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/v3.1.5/app-release.apk",
+    "sha256": "6e80ae64acb71923fbe4557058796d92f1099dbdcb423f7ec48ba28554cedbd7",
+    "changelog": "修复固件升级状态残留：收到设备实际版本后立即刷新更新标记；版本变化后清除旧固件升级结果，相同版本的真实失败仍保留；App下载与固件升级的状态和进度分开，切换设备不再串用提示；未知固件版本不再误报有新版本。主控固件保持2.0.6，无需重新烧录。"
   },
   "firmware": {
     "main": {

@@ -8,18 +8,12 @@
   },
   "firmware": {
     "main": {
-      "version": "1.3.2",
-      "build_number": 1,
-      "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/firmware-v1.3.2/main_firmware.bin",
-      "sha256": "61ae624d958b0f3fae138fffe583bf3f0eabb976d36c13f32f88b618df6d8c32",
-      "changelog": "状态灯带改用 GPIO47，避免占用已有 GPIO48；现有电机及外设引脚保持不变。灯带 DIN 需接 GPIO47。"
-    },
-    "camera": {
-      "changelog": "修复摄像头 OTA 响应未完成就重启导致 connection reset by peer。",
-      "sha256": "a3d2cc221e7d3e5546e4ae67d1b25d97edfcb2b436266796dc3f963b9f7929cf",
-      "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/firmware-v1.0.1/cam_firmware.bin",
-      "version": "1.0.1",
-      "build_number": 1
+      "version": "2.0.5",
+      "build_number": 6,
+      "hardware": "esp32s3_df200",
+      "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/firmware-v2.0.5/main_firmware.bin",
+      "sha256": "6d6ca056d5039e12d1b834788b5a3bf402869b4e7ae87696782a37727f5e175a",
+      "changelog": "四轮增加按运动比例的速度差补偿，最慢轮饱和时共同限速；松手后统一短接制动250ms再释放；PCA9685初始化关闭输出，取消开机扫动和自动归中。沿用2.0.3/2.0.4全部GPIO；2.0.2及更早版本须先按接线文档迁移后轮编码器到GPIO2/38/47/48并移除这些引脚原器件。本固件仅用于单ESP32-S3 N16R8+DF200。请架空低速验证轮速和制动，L298每桥制动电流须低于2A。"
     }
   }
 }

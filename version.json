@@ -8,12 +8,12 @@
   },
   "firmware": {
     "main": {
-      "version": "2.0.12",
-      "build_number": 13,
+      "version": "2.0.13",
+      "build_number": 14,
       "hardware": "esp32s3_df200",
-      "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/firmware-v2.0.12/main_firmware.bin",
-      "sha256": "ff961d1466ac70c32f7a87ae58b396d87f0d20ef565aa76266c14e9b58cf9e28",
-      "changelog": "配合现有App 3.1.8，仅更新主控固件。修复usb_host_uvc 2.6.0帧列表遍历跳过相邻第二种格式的问题：设备报告YUY2后紧邻MJPEG时，旧代码可能只显示YUY2。构建目录生成补丁，不修改托管组件。真实驱动函数测试复现旧代码声明六档却只解析一档，修复后两种格式排列、颜色描述符以及五档MJPEG均正确，真正只声明一档的设备仍只显示一档。/camera_status和网页Device report新增descriptor_frame_count、parsed_frame_count、frame_capacity_bytes，区分声明、解析及缓存筛选。该缺陷已复现，但无法仅凭旧报告确定实物DF200也属同因；升级后重新检查 http://主控IP/camera_test，不保证摄像头在Full-Speed下开放高清。保留2.0.11曝光/白平衡/增益及七档Web测试、2.0.10运动修复和全部GPIO。三种固件编译、实际构建补丁的枚举测试、控制/帧容量、USB关闭及9项Flutter兼容检查通过；实物高清仍待验证。2.0.4/2.0.5须先USB修复。"
+      "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/firmware-v2.0.13/main_firmware.bin",
+      "sha256": "a87a20e47a272956f26d8cd7aa6cfc298a5ad3ae60ade4c266a12b3722f4c5ec",
+      "changelog": "配合App 3.1.8的USB能力诊断更新，不保证解锁高清。实物2.0.12仍只列出YUY2 160×120，原计数仅覆盖第一个视频接口；/camera_status和网页Device report新增usb对象，读取实际USB速度、VID/PID、配置数量及整个当前配置的全部视频接口、MJPEG和未压缩格式/帧数量，区分Full-Speed设备能力限制与其他接口漏读。复用USB缓存元数据，不新增视频协商或控制请求；读取失败和异常描述符明确报告错误。三种固件编译、多接口及原始视频统计、实际驱动枚举、USB关闭、OTA栈与9项Flutter兼容检查通过；新USB报告仍待实物升级读取。保留现有运动、摄像头控制及GPIO。2.0.4/2.0.5须先USB修复。"
     }
   }
 }

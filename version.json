@@ -8,12 +8,12 @@
   },
   "firmware": {
     "main": {
-      "version": "2.0.13",
-      "build_number": 14,
+      "version": "2.0.14",
+      "build_number": 15,
       "hardware": "esp32s3_df200",
-      "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/firmware-v2.0.13/main_firmware.bin",
-      "sha256": "a87a20e47a272956f26d8cd7aa6cfc298a5ad3ae60ade4c266a12b3722f4c5ec",
-      "changelog": "配合App 3.1.8的USB能力诊断更新，不保证解锁高清。实物2.0.12仍只列出YUY2 160×120，原计数仅覆盖第一个视频接口；/camera_status和网页Device report新增usb对象，读取实际USB速度、VID/PID、配置数量及整个当前配置的全部视频接口、MJPEG和未压缩格式/帧数量，区分Full-Speed设备能力限制与其他接口漏读。复用USB缓存元数据，不新增视频协商或控制请求；读取失败和异常描述符明确报告错误。三种固件编译、多接口及原始视频统计、实际驱动枚举、USB关闭、OTA栈与9项Flutter兼容检查通过；新USB报告仍待实物升级读取。保留现有运动、摄像头控制及GPIO。2.0.4/2.0.5须先USB修复。"
+      "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/firmware-v2.0.14/main_firmware.bin",
+      "sha256": "2f0fdc21d175529cd87780f04014a894a76babb9c7bd431de4b1b19cc3df5267",
+      "changelog": "恢复正常视频流程，配合现有App 3.1.8。移除临时camera_test页面/设置接口、手动分辨率和帧率切换、曝光/增益/白平衡控制及USB完整诊断代码；网页恢复普通视频预览，camera_status保留正常运行信息。仅选择摄像头实际报告且App兼容的模式，当前实物仍为YUY2 160×120约10fps。保留车辆控制、GPIO、灯光、舵机及OTA修复，保留USB热插拔关闭顺序、断流恢复和相邻格式枚举修复。临时脚本、截图和排查产物已归档。三种固件构建、桌面/手机视频像素与比例、USB关闭流程、实际驱动枚举、OTA栈和9项Flutter兼容检查通过。2.0.4/2.0.5须先USB修复。"
     }
   }
 }

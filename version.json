@@ -8,12 +8,12 @@
   },
   "firmware": {
     "main": {
-      "version": "2.0.10",
-      "build_number": 11,
+      "version": "2.0.11",
+      "build_number": 12,
       "hardware": "esp32s3_df200",
-      "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/firmware-v2.0.10/main_firmware.bin",
-      "sha256": "8cfb9e6a05aef297661ca383801a7c1bfb66b66d96932e9cf952c453fcf8dbf4",
-      "changelog": "配合现有App 3.1.8，无需更新App。根据实物确认的左后轮向前转却反馈反向问题，将M3编码器反馈符号从+1修正为-1，同时修正速度与累计行程计数，避免错误反馈导致加速及方向异常停车。现有GPIO及A/B接线不变，不要同时互换编码器线；其余轮位、控制参数和无反馈/反向停车保护保持不变。保留2.0.9轮速同步、控制连接和视频修复。独立传感器方向模拟、GPIO检查及三种固件构建通过；升级后先架空以20%速度验证前进、后退，实测与目标应同号，实车仍需验证。2.0.4/2.0.5须先USB修复。"
+      "url": "https://github.com/Wann-99/esp32_smart_car_updates/releases/download/firmware-v2.0.11/main_firmware.bin",
+      "sha256": "4c46697239c00cc7f66eddac5982b0ce406dca594aa0a861a573e76053dda9d6",
+      "changelog": "配合现有App 3.1.8，画质控制先在 http://主控IP/camera_test 网页验证。本版新增设备实际枚举的MJPEG 320x240、640x360，连同640x480、720P、1080P及YUY2 160x120、320x240共七档测试；只选择设备报告的帧间隔，显示完整模式、实际收帧及USB错误。支持实际开放的UVC自动曝光/白平衡、曝光时间、手动增益和曝光优先级，设置后读取设备值核对；不虚构独立自动增益开关。模式切换、设备拒绝、断开及OTA取消均反馈真实结果。YUY2 320x240仅供Web手动测试，自动回退保留App兼容的160x120；Web测试后恢复MJPEG或Auto fallback。保留2.0.10运动控制、M3方向修正及全部GPIO。三种固件编译、七档桌面/手机浏览器、UVC控制/帧容量/取消、热插拔关闭、OTA栈及9项Flutter兼容检查通过；真实DF200高清输出及控制仍待实测，不能保证1080P30fps。2.0.4/2.0.5须先USB修复。"
     }
   }
 }
